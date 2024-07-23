@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 3rem;
+  color: darksalmon;
+  text-decoration: underline;
+}
+body{
+  background-image: url("Bckgrndimg.jpeg");
+  background-size: cover;
+  text-align: center;
+}
+
+.container{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game{
+  height: 50vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Box{
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 3px;
+  font-size: 10vmin;
+  color: white;
+  background:transparent;
+}
+#reset {
+  padding: 1rem;
+  background-color: rgba(255, 215, 0, 0.8); /* Bright yellow-orange color */
+  color: rgb(0, 0, 0); /* Black text color */
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#reset:hover {
+  background-color: rgba(255, 215, 0, 0.9); /* Brighter yellow-orange color on hover */
+}
+.msg-con{
+  height: 30vmin;
+} 
+#new {
+  padding: 2rem;
+  background-color: rgba(0, 128, 0, 0.8); /* Dark green color */
+  color: rgb(255, 255, 255); /* White text color */
+  font-size: 1.5vmin;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#new:hover {
+  background-color: rgba(0, 128, 0, 0.9); /* Brighter dark green color on hover */
+}
+#msg{
+  font-size: 8vmin;
+  color: rgb(185, 176, 176);
+}
+.hide{
+  display: none;
+}
+.b1{
+  border-right: 2.5px solid white;
+  border-bottom: 2.5px solid white;
+}
+
+.b2{
+  border-left: 2.5px solid white;
+  border-bottom: 2.5px solid white;
+  border-right: 2.5px solid white;
+}
+
+.b3{
+  border-left: 2.5px solid white;
+  border-bottom: 2.5px solid white;
+}
+
+.b4{
+  border-right: 2.5px solid white;
+  border-top: 2.5px solid white;
+  border-bottom: 2.5px solid white; 
+}
+
+.b5{
+  border: 2.5px solid white;
+}
+
+.b6{
+  border-left: 2.5px solid white;
+  border-top: 2.5px solid white;
+  border-bottom: 2.5px solid white;
+}
+
+.b7{
+  border-top: 2.5px solid white;
+  border-right: 2.5px solid white;
+}
+
+.b8{
+  border-top: 2.5px solid white;
+  border-left: 2.5px solid white;
+  border-right: 2.5px solid white;
+}
+
+.b9{
+  border-left: 2.5px solid white;
+  border-top: 2.5px solid white;
+}
+.Box:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+.winning-box {
+  background-color: rgba(0, 255, 0, 0); /* Initial transparent background */
+}
+
+.winning-box.winner {
+  background-color: rgba(0, 255, 0, 0.5); /* Final transparent green background */
+  transition: background-color 1s ease-in; /* Add a transition effect with ease-in */
+  opacity: 0.85;
+}
+.Box {
+  background-color: transparent; /* Initial transparent background */
+}
+.no-winner {
+  background-color: red; /* Red background color when no winner is found */
+  opacity: 0.85;
+}
