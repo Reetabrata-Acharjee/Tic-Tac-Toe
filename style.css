@@ -135,7 +135,7 @@ body{
 }
 
 .winning-box.winner {
-  background-color: rgba(0, 255, 0, 0.5); /* Final transparent green background */
+  background-color: rgba(0, 255, 0, 0.3); /* Final transparent green background */
   transition: background-color 1s ease-in; /* Add a transition effect with ease-in */
   opacity: 0.85;
 }
@@ -144,5 +144,5 @@ body{
 }
 .no-winner {
   background-color: red; /* Red background color when no winner is found */
-  opacity: 0.85;
+  opacity: 0.9;
 }
